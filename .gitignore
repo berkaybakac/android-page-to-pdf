@@ -1,0 +1,29 @@
+# Generated files and captured content
+.venv/
+__pycache__/
+*.py[cod]
+.capture.lock
+output/
+tmp/
+.DS_Store
+android/build/
+
+# Signing material, personal artwork and device configuration
+android/.signing/
+android/assets/
+android/local-res/
+profiles/*.local.json
+*.jks
+*.keystore
+*.p12
+*.pem
+.env
+.env.*
+!.env.example
+local.properties
+*.apk
+*.aab
+*.idsig
+*.log
+.codex/
+.agents/

@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")"
+if [ ! -x .venv/bin/python ]; then
+    echo 'İlk kullanım için: ./setup' >&2
+    exit 1
+fi
+exec /usr/bin/caffeinate -i .venv/bin/python -u capture.py "$@"

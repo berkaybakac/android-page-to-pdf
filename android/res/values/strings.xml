@@ -1,0 +1,3 @@
+<resources>
+    <string name="service_description">Boran PDF, yalnızca siz çekimi başlattığınızda açık kitabın ekran görüntüsünü alır ve sonraki sayfaya dokunur. Görüntüler tablette kalır. İnternet izni yoktur. Şifre veya korumalı içerik aşılmaz. İşiniz bitince bu izni kapatabilirsiniz.</string>
+</resources>
