@@ -60,3 +60,19 @@ Başka uygulama için `--profile` ile genel bir profil kullanın. Koordinatlar y
 ```
 
 Kaydırma örneği: `"next": ["swipe", 1150, 1150, 300, 1150, 350]`. Genel profilde sayfa numarası kontrolü yoktur. Önce kısa bir seriyle uygulamanın davranışını kontrol edin. OCR ve DRM aşma yoktur.
+
+## Klasörü silme ve GitHub'dan geri kurma
+
+Repo kaynak kodun tamamını içerir; gerekli SDK ve JDK kurulduktan sonra temiz bir kopyadan APK üretilebilir. Temiz kaynak kopyasının derlenmesi doğrulanmıştır. Hazır APK repo içinde saklanmaz.
+
+```sh
+git clone https://github.com/berkaybakac/android-page-to-pdf.git
+cd android-page-to-pdf
+./android/build.sh
+```
+
+**Yerel klasörü silmeden önce `android/.signing/` klasörünü güvenli bir yere ayrıca yedekleyin.** İçindeki anahtar ve parola olmadan yeni bir APK oluşturulabilir, fakat mevcut kurulumun üzerine güncelleme yapılamaz; farklı imzalı APK için eski uygulamayı kaldırmak gerekir. Anahtarı GitHub'a yüklemeyin. Geri kurarken aynı klasöre yerleştirin.
+
+Kişisel fotoğraflı ikonu korumak için `android/local-res/` ve `android/assets/`, yerel cihaz seçimi için `profiles/*.local.json` dosyalarını da ayrıca yedekleyebilirsiniz. İkon dosyaları olmadan uygulama nötr ikonla derlenir. PDF ve ekran görüntüleri de GitHub yedeğine dahil değildir; saklamak istiyorsanız `output/` içeriğini ayrıca koruyun.
+
+GitHub'dan indirmek, tablete kurulmuş uygulamayı etkilemez. Tabletteki uygulamanın günlük çalışması bu Mac klasörüne bağlı değildir.

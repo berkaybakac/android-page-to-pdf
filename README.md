@@ -1,4 +1,4 @@
-# Boran PDF
+# Android Page-to-PDF
 
 **An offline Android app that turns visible pages into a single PDF.**
 
@@ -52,6 +52,8 @@ The original macOS CLI is included:
 ```
 
 See [usage and setup](docs/USAGE.md) for permissions, ADB pairing, profiles, and limitations.
+
+A clean source export has been built successfully without personal files. A fresh clone can be rebuilt after installing the prerequisites above. APKs and the original signing key are not stored in Git; keep the signing key separately to update an existing installation.
 
 ## Repository privacy
 
